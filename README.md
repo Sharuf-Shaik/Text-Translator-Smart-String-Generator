@@ -46,7 +46,7 @@ State Management: React Hooks
 
 ⚙️ Installation & Setup
 # Clone the repository
-git clone https://github.com/your-username/your-repo-name.git
+git clone 
 
 # Navigate into the project
 cd your-repo-name
