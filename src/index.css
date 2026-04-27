@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+body {
+  background-color: var(--color-slate-50, #f8fafc);
+  color: var(--color-slate-900, #0f172a);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-color 300ms, color 300ms;
+}
+
+.dark body {
+  background-color: var(--color-slate-900, #0f172a);
+  color: var(--color-slate-100, #f1f5f9);
+}
+
+.glass-panel {
+  background-color: rgb(255 255 255 / 0.7);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgb(255 255 255 / 0.2);
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+
+.dark .glass-panel {
+  background-color: rgb(30 41 59 / 0.7);
+  border: 1px solid rgb(255 255 255 / 0.05);
+}
+
+.primary-gradient-text {
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  background-image: linear-gradient(to right, #7c3aed, #4f46e5);
+}
